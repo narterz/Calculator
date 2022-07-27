@@ -1,17 +1,4 @@
 # Calculator
-
-Concepts covered in project
-
-  #DOM manipulation using onCLick events
-    -changing style colors
-    -displaying text through user input
-  #switch cases to perform various functionalities
-  #handeling errors in code using try
-  
-
-
-Features lacking in project (To-Do)
-  #responsive design for mobile and tablet devices
-  #polished styling for number input
-  #Optimizing loops for improved performance
-  #improved organization of sass partials
+This project mimicks a standard calculator to portray basic javascript DOM manipulation techniques. Functionalities were implemented with Javascript Onclick events and switch cases. 
+Scss was used to organize various styling concepts.
+gulp sass was used to display updates in code onto the browser.
