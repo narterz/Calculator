@@ -1,0 +1,41 @@
+@use '../abstracts/flex' as flex;
+
+*,
+*::before,
+*::after {
+      box-sizing: border-box;
+}
+
+body {
+      margin: 0;
+      padding: 0;
+}
+
+.container {
+      height: 100vh;
+      @include flex.flexCenter();
+
+      .wrapper {
+            height: 90vh;
+            width: 90vw;
+            margin: auto auto;
+            @include flex.flexCenter();
+
+            .calculator {
+                  height: 100%;
+                  position: relative;
+            }
+      }
+}
+
+button {
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: opacity 150ms ease-in-out;
+      opacity: 1;
+}
+
+button:hover {
+      opacity: 0.4;
+}

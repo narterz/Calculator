@@ -1,0 +1,18 @@
+@mixin flexCenter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+@mixin numberDisplay {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+}
+
+.wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}

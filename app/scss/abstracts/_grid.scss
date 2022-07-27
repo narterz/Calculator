@@ -1,0 +1,109 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .calc-title {
+    height: 15%;
+  }
+  
+  .screen {
+    height: 15%;
+    text-align: right;
+  }
+  
+  .buttons {
+    width: 80%;
+    display: grid;
+    gap: 14px;
+    height: 68%;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "cancel plus-minus div mult"
+      "sev eight nine minus"
+      "four five six plus"
+      "one two three equal"
+      "zip deci del equal";
+      margin: 20px;
+  }
+  
+  #cancel {
+    grid-area: cancel;
+  }
+  
+  #plus-minus {
+    grid-area: plus-minus;
+  }
+  
+  #divide {
+    grid-area: div;
+  }
+  
+  #multiply {
+    grid-area: mult;
+  }
+  
+  #seven {
+    grid-area: sev;
+  }
+  
+  #eight {
+    grid-area: eight;
+  }
+  
+  #nine {
+    grid-area: nine;
+  }
+  
+  #minus {
+    grid-area: minus;
+  }
+  
+  #four {
+    grid-area: four;
+  }
+  
+  #five {
+    grid-area: five;
+  }
+  
+  #six {
+    grid-area: six;
+  }
+  
+  #plus {
+    grid-area: plus;
+  }
+  
+  #one {
+    grid-area: one;
+  }
+  
+  #two {
+    grid-area: two;
+  }
+  
+  #three {
+    grid-area: three;
+  }
+  
+  #equals {
+    grid-area: equal;
+  }
+  
+  #zero {
+    grid-area: zip;
+  }
+  
+  #decimal {
+    grid-area: deci;
+  }
+  
+  #del {
+    grid-area: del;
+  }
+  
+}
+

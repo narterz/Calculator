@@ -1,0 +1,37 @@
+@use "../abstracts/flex" as flex;
+@use "../base/fonts" as font;
+
+.calculator {
+  width: 30%;
+  border-radius: 30px;
+  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+
+
+  .calc-title {
+    @include flex.flexCenter();
+    letter-spacing: 2.2px;
+  }
+
+  .screen {
+    border-radius: 20px;
+    @include flex.numberDisplay();
+    width: 100%;
+    
+  }
+
+  .checkbox-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      height: 10%;
+      width: 80%;
+
+      .toggle.container {
+            margin-top: auto;
+            margin-bottom: auto;
+      }
+  }
+}

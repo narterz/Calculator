@@ -1,0 +1,31 @@
+.toggle.container {
+    width: 7em;
+    height: 3em;
+    margin-bottom: 2em;
+    border-radius: 1.5em;
+    position: relative;
+    cursor: pointer;
+
+    .toggle.button {
+      position: absolute;
+      height: 2.5em;
+      width: 2.7em;
+      border-radius: 2em;
+      margin: auto auto;
+      bottom: 50%;
+      top: 50%;
+      left: 6%;
+      transition: 600ms;
+    }
+
+    .toggle.button.dark {
+      left: 55%;
+    }
+    
+  }
+
+
+
+
+
+

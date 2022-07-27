@@ -1,0 +1,30 @@
+@use "sass:math";
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@1,700&family=Days+One&family=Inconsolata&family=Odibee+Sans&family=Suez+One&family=Vesper+Libre:wght@500&display=swap");
+
+//converts pixels to rem
+@function rem($px, $base-font: 16) {
+  @return (math.div($px, $base-font)) * 1rem;
+}
+
+$fonts: (
+  title: rem(128),
+  screen: rem(64),
+  buttons: rem(32),
+  main-font: "Anton",
+);
+
+body {
+  font-family: map-get($fonts, main-font);
+
+  .screen {
+    font-size: map-get($fonts, screen);
+  }
+
+  .calc-btn {
+    font-size: map-get($fonts, buttons);
+  }
+
+  #del {
+    font-size: 2rem;
+  }
+}
